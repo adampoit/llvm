@@ -271,7 +271,7 @@ if( LLVM_ENABLE_FFI )
     message(FATAL_ERROR "libffi includes are not found.")
   endif()
 
-  find_library(FFI_LIBRARY_PATH ffi PATHS ${FFI_LIBRARY_DIR})
+  find_library(FFI_LIBRARY_PATH libffi PATHS ${FFI_LIBRARY_DIR})
   if( NOT FFI_LIBRARY_PATH )
     message(FATAL_ERROR "libffi is not found.")
   endif()

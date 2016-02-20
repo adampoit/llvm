@@ -37,6 +37,7 @@
 
 #ifdef HAVE_FFI_CALL
 #ifdef HAVE_FFI_H
+#define FFI_BUILDING
 #include <ffi.h>
 #define USE_LIBFFI
 #elif HAVE_FFI_FFI_H
